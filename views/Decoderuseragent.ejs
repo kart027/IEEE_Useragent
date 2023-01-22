@@ -1,0 +1,61 @@
+<%- include("partials/header") %>
+
+<div  class="container">
+   <div class="row" style="padding-top: 50px;">
+   <br><br>
+   <div class="row" >
+       <div class="card">
+       <table class="table table-borderless" >
+           <thead>
+             <tr  >
+               <th scope="col"><h2>Specification</h2></th>  
+             </tr>
+           </thead>
+           <tbody>
+             <tr class="table-info">
+            
+               <th scope="row">Platform:</th>
+               <td colspan="2"><%= users.platform %></td>
+       
+             </tr>
+             <tr class="table-info">
+           
+               <th scope="row">Vendor:</th>
+               <td colspan="2"><%= users.vendor %></td>
+              
+             </tr>
+             <tr class="table-info">
+               <th scope="row">ViewportHeight:</th>
+               <td colspan="2"><%= users.viewportHeight %></td>
+             </tr>
+             <tr class="table-info">
+              <th scope="row">Viewportwidth:</th>
+              <td colspan="2"><%= users.viewportWidth %></td>
+            </tr>
+            <tr class="table-info">
+              <th scope="row">ScreenHeight:</th>
+              <td colspan="2"><%= users.screenHeight %></td>
+            </tr>
+            <tr class="table-info">
+              <th scope="row">ScreenWidth:</th>
+              <td colspan="2"><%= users.screenWidth %></td>
+            </tr>
+             <tr class="table-info">
+               <th scope="row"> DeviceCategory:</th>
+               <td colspan="2"><%=users.deviceCategory %></td>
+             </tr>
+             <tr class="table-info">
+               <th scope="row">appName:</th>
+               <td colspan="2"><%= users.appName %></td>
+             </tr>
+             
+
+            
+           </tbody>
+         </table>
+         </div>
+   </div>
+   </div> 
+
+   
+<%- include("partials/footer") %>

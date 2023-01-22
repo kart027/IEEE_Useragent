@@ -1,0 +1,36 @@
+<%- include("partials/header") %>
+<div style="margin-top: 150px; margin-bottom:150px" class="container ">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col">
+        <form class="form-inline" action="/useragent" method="post">
+            <div class="row">
+            <div class="col">
+
+              <input type="number" name="number"  class="form-control shadow" placeholder="Max Limit">
+            </div>
+            <div class="col">
+            <button type="submit" class="btn btn-primary mb-2 shadow" >Submit</button>
+            </div>
+            </div>
+          </form>
+          </div>
+          <div class="col"></div>
+      <div class="w-100"></div>
+      <br><br><br><br>
+      <div class="list-group shadow">
+       <h2  style="text-align:center; font-family:'Times New Roman', Times, serif ; background-color : rgb(75, 93, 250);color:white" >Result</h2>
+       <p class="card-text"  style="text-align: center; font-family:'Times New Roman', Times, serif" ><i>Generator: </i>Enter the number of random user agent strings you want to generate in the 'Enter Max Limit' Section.
+      </p>
+      <p class="card-text"  style="text-align: center; font-family:'Times New Roman', Times, serif" ><i>Decoder :: </i> Click on the Generated string link and you'll be directed to the Decoder.
+      </p>
+
+      </div>
+    </div>
+  </div>
+
+  
+  <%- include("partials/footer") %>
+
+
+
