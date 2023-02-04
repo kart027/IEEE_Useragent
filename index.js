@@ -9,6 +9,7 @@ app.use(bodyParser.urlencoded({ extended : true}))
 app.use(express.static("./assests"))
 const UserAgent = require('user-agents'); 
 const { type } = require('os');
+require('dotenv').config({path:"./config/config.env"});
 
  
 app.get('/', (req, res) => {
@@ -47,7 +48,7 @@ app.post('/useragent',(req,res)=>{
 
 
 
-const port = 3000;
+const port = process.env.PORT;
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
