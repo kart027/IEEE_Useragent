@@ -11,6 +11,8 @@ const UserAgent = require('user-agents');
 const { type } = require('os');
 require('dotenv').config({path:"./config/config.env"});
 
+app.engine('ejs', require('ejs').__express);
+
  
 app.get('/', (req, res) => {
   res.render('Home') 
