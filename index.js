@@ -4,14 +4,14 @@ const path = require('path');
 
 const app = express();
 app.set("view engine", "ejs")
-// app.set("views", path.resolve(__dirname, "views/ejs"))
+
 app.use(bodyParser.urlencoded({ extended : true}))
 app.use(express.static("./assests"))
 const UserAgent = require('user-agents'); 
-const { type } = require('os');
+
 require('dotenv').config({path:"./config/config.env"});
 
-app.engine('ejs', require('ejs').__express);
+
 
  
 app.get('/', (req, res) => {
