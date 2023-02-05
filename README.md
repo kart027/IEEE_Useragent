@@ -1,1 +1,1 @@
-For Live demo got ot https://usergenrator.onrender.com/
+For Live demo go to https://usergenrator.onrender.com/
